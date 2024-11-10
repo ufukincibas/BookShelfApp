@@ -19,7 +19,7 @@ function Login({navigation}){
     const [loading , setloading] = useState(false);
     function handleSignUp(){
         return(
-            navigation.navigate("SignPage")
+            navigation.navigate("SignInPage")
         )
     }
         async function handleFormSubmit(formValues){
@@ -41,7 +41,7 @@ function Login({navigation}){
         }
     return(
         <View>
-            <Text style={styles.header}>BookShelf'e Hoşgeldiniz...</Text>
+            <Text style={styles.header}>BookShelf'e Giriş Yap</Text>
            
           <Formik initialValues={initialFormValues} onSubmit={handleFormSubmit}> 
           { ({values , handleChange , handleSubmit}) => (
