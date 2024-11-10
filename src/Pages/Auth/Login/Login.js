@@ -6,8 +6,8 @@ import { showMessage, } from "react-native-flash-message";
 
 import styles from "./Login.styles"
 import Input from "../../../Components/Input";
-import Button from "../../../components/Button";
-import authErrorMessageParser from "../../../utils/authErrorMessageParser";
+import Button from "../../../Components/Button";
+import authErrorMessageParser from "../../../Utils/AuthErrorMessageParser";
 
 
 const initialFormValues  = {
@@ -41,7 +41,7 @@ function Login({navigation}){
         }
     return(
         <View>
-            <Text style={styles.header}>Bana Ne?</Text>
+            <Text style={styles.header}>BookShelf'e Hoşgeldiniz...</Text>
            
           <Formik initialValues={initialFormValues} onSubmit={handleFormSubmit}> 
           { ({values , handleChange , handleSubmit}) => (
