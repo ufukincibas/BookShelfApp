@@ -10,3 +10,5 @@ function Home(){
         </View>
     )
 }
+
+export default Home;

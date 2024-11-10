@@ -27,7 +27,8 @@ function Login({navigation}){
                 setloading(true);
                 await auth().signInWithEmailAndPassword(formValues.userMail , formValues.Password)
 
-                setloading(false);  
+                setloading(false); 
+                navigation.navigate("HomePage") 
             } catch (error) {
                 console.log(error);
                 showMessage({
