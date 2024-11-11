@@ -22,7 +22,7 @@ function Home(){
         .on('value', snapshot => {
             const contentData = snapshot.val();
 
-           
+            console.log("Received content data:", contentData); // Debugging
            const parsedData = ParseContentData(contentData || {});
            setContentList(parsedData)
           }); //realtime changes
@@ -44,21 +44,24 @@ function sendContent(content){
  const userMail = auth().currentUser.email
 
     const contentObje = {
-       text : content ,
-       username : userMail.split("@")[0]  ,     //@ ten oncesini gonder
+        text: content.text,             // içerik metni
+        bookTitle: content.bookTitle,   // kitap başlığı
+        authorName: content.authorName, // yazar adı
+        bookGenre : content.bookGenre ,
+        username : userMail.split("@")[0]  ,     //@ ten oncesini gonder
        date : (new Date()).toISOString(),
-       dislike : 0
+       like : 0
     }
     database().ref("Messages/").push(contentObje) //messages ın altına git push islemi gerceklestir database e yolladı
 }
 
-function handleBanane (item) {
+function handleLike (item) {
     database()
         .ref(`Messages/${item.id}/`)
-        .update({dislike: item.dislike + 1});
+        .update({like: item.like + 1});
 }
 
-const renderContent = ({item}) => (  <PostCard message={item} onBanane={() => handleBanane(item)} />)
+const renderContent = ({item}) => (  <PostCard message={item} onLike={() => handleLike(item)} />)
 
     return(
 <View style={styles.container}>

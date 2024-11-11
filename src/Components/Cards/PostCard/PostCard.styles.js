@@ -38,25 +38,33 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between', // Alanı eşit şekilde dağıt
     alignItems: 'center',          // Ortalanmış metin
   },
-  dislike_container: {
+  like_container: {
     flexDirection: 'row',          // Yatay düzenleme
     alignItems: 'center',          // Buton metnini ortala
   },
-  dislike_count_container: {
+  like_count_container: {
     backgroundColor: '#f44336',   // Kırmızı renkli arka plan
     borderRadius: 12,              // Yuvarlatılmış köşeler
     paddingHorizontal: 8,          // Yatay iç boşluk
     paddingVertical: 2,            // Dikey iç boşluk
   },
-  dislike_count_text: {
+  like_count_text: {
     color: '#fff',                 // Beyaz metin rengi
     fontSize: 14,                  // Sayı boyutu
     fontWeight: 'bold',            // Kalın yazı
   },
-  dislike_text: {
+  like_text: {
     color: '#f44336',              // Kırmızı metin rengi
     fontSize: 16,                  // Yazı boyutu
     marginLeft: 5,                 // Soldan boşluk
+  },
+  book_info: {
+    marginTop: 10,                 // Kitap bilgileri için üst boşluk
+    marginBottom: 10,              // Kitap bilgileri için alt boşluk
+  },
+  book_info_text: {
+    fontSize: 14,                  // Kitap bilgileri için metin boyutu
+    color: '#555',                 // Açık gri renk
   },
 });
 

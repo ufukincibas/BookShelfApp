@@ -8,7 +8,7 @@ export default StyleSheet.create({
        marginHorizontal:10,
         borderTopLeftRadius: 10 ,
         borderTopRightRadius : 10 ,
-        height : deviceSize.height / 3 ,
+        height : deviceSize.height / 2 ,
        
     } , 
     input_container:{
