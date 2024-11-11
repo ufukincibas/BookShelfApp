@@ -157,6 +157,31 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/CMakeFiles/cmake.verify_globs")
 endif()
 
+# react_codegen_SRCS at C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/*.cpp")
+set(OLD_GLOB
+  "C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/RNVectorIconsSpec-generated.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/CMakeFiles/cmake.verify_globs")
+endif()
+
+# react_codegen_SRCS at C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/*.cpp")
+set(OLD_GLOB
+  "C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/ComponentDescriptors.cpp"
+  "C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/EventEmitters.cpp"
+  "C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/Props.cpp"
+  "C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/RNVectorIconsSpecJSI-generated.cpp"
+  "C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/ShadowNodes.cpp"
+  "C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/States.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/CMakeFiles/cmake.verify_globs")
+endif()
+
 # input_SRC at C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native/ReactAndroid/cmake-utils/ReactNative-application.cmake:38 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/ufuk/Desktop/bookShelfApp/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/*.cpp")
 set(OLD_GLOB

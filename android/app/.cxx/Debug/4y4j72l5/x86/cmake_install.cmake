@@ -48,6 +48,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/rnreanimated_autolinked_build/cmake_install.cmake")
   include("C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/safeareacontext_autolinked_build/cmake_install.cmake")
   include("C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/rnscreens_autolinked_build/cmake_install.cmake")
+  include("C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/RNVectorIconsSpec_autolinked_build/cmake_install.cmake")
 
 endif()
 

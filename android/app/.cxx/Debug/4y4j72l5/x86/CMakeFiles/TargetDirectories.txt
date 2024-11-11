@@ -13,3 +13,6 @@ C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/safeareac
 C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir
 C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/rnscreens_autolinked_build/CMakeFiles/edit_cache.dir
 C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/rnscreens_autolinked_build/CMakeFiles/rebuild_cache.dir
+C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir
+C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/RNVectorIconsSpec_autolinked_build/CMakeFiles/edit_cache.dir
+C:/Users/ufuk/Desktop/bookShelfApp/android/app/.cxx/Debug/4y4j72l5/x86/RNVectorIconsSpec_autolinked_build/CMakeFiles/rebuild_cache.dir
