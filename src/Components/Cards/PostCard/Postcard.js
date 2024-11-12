@@ -2,10 +2,13 @@ import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { formatDistance, parseISO } from "date-fns";
 import { tr } from "date-fns/locale";
+import { useNavigation } from '@react-navigation/native';
 
 import styles from "./PostCard.styles.js";
 
 function PostCard({ message, onLike }) {
+
+    const navigation = useNavigation();
    
     const formattedDate = formatDistance(parseISO(message.date), new Date(), {
         addSuffix: true,
@@ -15,10 +18,20 @@ function PostCard({ message, onLike }) {
     // Beğeni sayısı null veya 0 ise, gösterme
     const likeCount = message.like ? message.like : 0;
 
+    const handleProfileNavigation = () => {
+     { // navigation ve username kontrolü
+        navigation.navigate("ProfileStack", { screen: "ProfilePage", params: { username: message.username } });
+
+        }
+    };
     return (
         <View style={styles.container}>
             <View style={styles.inner_container}>
-                <Text style={styles.user}>{message.username}</Text>
+
+            <TouchableOpacity onPress={handleProfileNavigation}>
+                    <Text style={styles.user}>{message.username}</Text>
+                </TouchableOpacity>
+
                 <Text style={styles.date}>{formattedDate}</Text>
             </View>
 

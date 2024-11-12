@@ -12,7 +12,7 @@ import ParseContentData from "../../../Utils/parseContentData";
 import PostCard from "../../../Components/Cards/PostCard";
 
 
-function Home(){
+function Home({navigation}){
     const [inputModalVisible , setInputModalVisible] = useState(false);
     const [contentList , setContentList] = useState([])
 
@@ -22,7 +22,6 @@ function Home(){
         .on('value', snapshot => {
             const contentData = snapshot.val();
 
-            console.log("Received content data:", contentData); // Debugging
            const parsedData = ParseContentData(contentData || {});
            setContentList(parsedData)
           }); //realtime changes
@@ -61,7 +60,7 @@ function handleLike (item) {
         .update({like: item.like + 1});
 }
 
-const renderContent = ({item}) => (  <PostCard message={item} onLike={() => handleLike(item)} />)
+const renderContent = ({item}) => (  <PostCard message={item} onLike={() => handleLike(item)} navigation={navigation} />)
 
     return(
 <View style={styles.container}>
@@ -69,6 +68,7 @@ const renderContent = ({item}) => (  <PostCard message={item} onLike={() => hand
         <FlatList 
         data={contentList}
         renderItem={renderContent}
+       
         />
 
     <FloatingButton iconName='chat-plus-outline' onPress={handleInputToggle}/>
